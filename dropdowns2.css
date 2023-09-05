@@ -1,0 +1,271 @@
+.file-upload-button {
+  position: fixed;
+ 
+  margin-left: 2.5%;
+  width: 200px;
+  height: 150px;
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: black;
+  font-weight: bold;
+  color: whitesmoke;
+  font-size: 18px;
+}
+
+.file-upload-button:hover {
+  opacity: 0.7;
+}
+
+/* CSS styles for the rhythmHeading element */
+.rhythm-heading {
+  position: fixed;
+  font-family: Arial, sans-serif;
+  font-size: 1.5em;
+  top: 18%;
+  margin-left: 15px;
+  color: white;
+  z-index: 9999;
+}
+
+
+
+
+
+
+.dropdown-rhythm {
+  position: fixed;
+  top: 175px; /* Adjust the top position as needed */
+  left: 23.5px; /* Adjust the left position as needed */
+  font-style: italic;
+  z-index: 9999;
+  background-color: transparent;
+  height: 25px;
+}
+
+
+.dropdown-color {
+  position: fixed;
+  top: 175px; /* Adjust the top position as needed */
+  left: 172px; /* Adjust the left position as needed */
+  font-style: italic;
+  z-index: 9999;
+}
+
+.dropdown-intensity {
+  position: fixed;
+  top: 175px; /* Adjust the top position as needed */
+  left: 125px; /* Adjust the left position as needed */
+  font-style: italic;
+  z-index: 9999;
+}
+
+
+.dropdown-instrument {
+  position: fixed;
+  top: 175px; /* Adjust the top position as needed */
+  left: 260px; /* Adjust the left position as needed */
+  font-style: italic;
+  z-index: 9999;
+}
+
+.adjectives-heading {
+  position: fixed;
+  font-family: Arial, sans-serif;
+  font-size: 1.5em;
+  margin-left: 15px;
+  top: 29%;
+  color: white;
+z-index: 9999;
+}
+
+.rhythm-rhythm {
+  position: fixed;
+  top: 285px; /* Adjust the top position as needed */
+  left: 23.5px; /* Adjust the left position as needed */
+  font-style: italic;
+  z-index: 9999;
+  background-color: transparent;
+  height: 25px;
+}
+.rhythm-rhythm::before {
+  content: "Mode:";
+  position: absolute;
+  top: -20px; /* Adjust the top position as needed */
+  left: 0;
+color: white;
+}
+
+
+
+.sound-sound {
+  position: fixed;
+  top: 285px; /* Adjust the top position as needed */
+  left: 98.5px; /* Adjust the left position as needed */
+  font-style: italic;
+  z-index: 9999;
+}
+.sound-sound::before {
+  content: "Time:";
+  position: absolute;
+  top: -20px; /* Adjust the top position as needed */
+  left: 0;
+color: white;
+}
+
+
+
+.color-color {
+  position: fixed;
+  top: 285px; /* Adjust the top position as needed */
+  left: 156.5px; /* Adjust the left position as needed */
+  font-style: italic;
+  z-index: 9999;
+}
+.color-color::before {
+  content: "";
+  position: absolute;
+  top: -20px; /* Adjust the top position as needed */
+  left: 0;
+color: white;
+}
+
+
+
+.chord-heading {
+  position: fixed;
+  font-family: Arial;
+  font-style: italic;
+  font-weight: normal;
+  margin-left: 15px;
+  top: 41%;
+  font-size: 16px;
+  color: white;
+z-index: 9999;
+}
+
+
+.dropdown-chord-1 {
+  position: fixed;
+  top: 325px; /* Adjust the top position as needed */
+  left: 23.5px; /* Adjust the left position as needed */
+  font-style: italic;
+  z-index: 9998;
+}
+
+.dropdown-chord-2 {
+  position: fixed;
+  top: 325px; /* Adjust the top position as needed */
+  left: 134.5px; /* Adjust the left position as needed */
+  font-style: italic;
+  z-index: 9998;
+}
+
+.dropdown-chord-3 {
+  position: fixed;
+  top: 325px; /* Adjust the top position as needed */
+  left: 245.5px; /* Adjust the left position as needed */
+  font-style: italic;
+  z-index: 9998;
+}
+
+
+
+
+
+.genre-heading {
+  position: fixed;
+  font-family: Arial, sans-serif;
+  font-size: 1.5em;
+  margin-left: 15px;
+  top: 48.5%;
+  color: white;
+
+}
+
+.dropdown-genre {
+  position: fixed;
+  top: 395px; /* Adjust the top position as needed */
+  left: 23.5px; /* Adjust the left position as needed */
+}
+
+.key-heading {
+  position: fixed;
+  font-family: Arial, sans-serif;
+  font-size: 1.5em;
+  margin-left: 15px;
+  top: 59%;
+  color: white;
+
+}
+
+
+.dropdown-key {
+  position: fixed;
+  top: 470px; /* Adjust the top position as needed */
+  left: 23.5px; /* Adjust the left position as needed */
+}
+
+
+.link-heading {
+  position: fixed;
+  font-family: Arial, sans-serif;
+  font-size: 1.5em;
+  margin-left: 15px;
+  top: 69%;
+  color: white;
+z-index: 9999;
+}
+
+
+.link-inputs-container {
+    position: fixed;
+  top: 537px; /* Adjust the top position as needed */
+  left: 23.5px; /* Adjust the left position as needed */
+   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.link-inputs-container2 {
+  position: fixed;
+top: 580px; /* Adjust the top position as needed */
+left: 23.5px; /* Adjust the left position as needed */
+ display: flex;
+flex-direction: column;
+align-items: flex-start;
+}
+
+.dropdown-genre,
+.dropdown-key,
+.dropdown-rhythm,
+.dropdown-color,
+.dropdown-intensity,
+.dropdown-instrument,
+.dropdown-chord-1,
+.dropdown-chord-2,
+.dropdown-chord-3,
+.link-inputs-container {
+  transform: translateY(15px);
+}
+
+
+.submit-container {
+  display: flex;
+  justify-content: flex-start;
+  z-index: 9998;
+}
+
+.submit-button {
+  position: fixed;
+  font-weight: bold;
+  bottom: 14.5%;
+  left: 200px;
+  background-color: black;
+  width: 175px; /* Adjust the width as needed */
+  height: 63px; /* Adjust the height as needed */
+  border-radius: 0;
+}
