@@ -199,7 +199,7 @@ z-index: 9999;
   margin-left: 15px;
   top: 59%;
   color: white;
-
+  display: none;
 }
 
 
@@ -207,6 +207,7 @@ z-index: 9999;
   position: fixed;
   top: 470px; /* Adjust the top position as needed */
   left: 23.5px; /* Adjust the left position as needed */
+  display: none;
 }
 
 
