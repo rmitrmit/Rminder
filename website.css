@@ -113,7 +113,7 @@ body {
 
 .starredoverlay {
   position: absolute;
-  display: flex;
+  display: none;
   justify-content: flex-start;
   top: 155px;
   left: 0;
