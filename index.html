@@ -1,25 +1,338 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <title>Risk & Skills and Jobs</title>
-</head>
-<body style="background-color:black;"></body>
-    
-    <h1 style ="background-color:crimson;color: #f0f8ff;font-size:30px;">Risk</h1>
-    <p style="color:white;">Even though our final product performs well in terms of features, we still cannot avoid facing difficulties at the beginning when we first apply the product to the system. First and foremost, the trust of users will be something that we have to face, our product is so new that it will not be easy to gain the trust of users in the early days. At the same time to be able to apply our product and an educational system, we need a lot of cooperation from the teacher to the students. Since this is a new system, we need to guide the teachers and students about the operations and functions of the application. This application is considered to completely change the learning and teaching habits of the school. Before applying the product, teachers only need to upload learning files to the class's social network group and students need to access many data sources to be able to search for knowledge. Furthermore, our product will cause teachers to do more work than the old way of teaching, they will have to upload at the right time and on the right topic of that knowledge, but this gives an advantage to the teachers. However, students only need to have the right access to our website to get the necessary knowledge, no need to wander around like before.</p>
-    
-    <h2 style="background-color: dodgerblue;color:white;font-size:30px;" >Skills and Jobs</h2>
-    <ol style="color:white;">
-    <li>A designer will be the position that we target first, they will be the ones to help me develop the interface of the system because this is not our strong point, a system with a good-looking interface will create the first impression on the user and will be able to subconsciously motivate them to use that product. Design and sketching are specialized skills that our team can hardly learn quickly to make the system more beautiful, so an investment in this position will be a necessary decision. At the same time, they will have experience in how to make something as dry as our system eye-catching, a beautiful interface will be one of the main factors to make a project successful.</li>
-    <li>A professional programmer is the next target for our project development, because most of the members are new in this field, and there will be unforeseen errors that will happen, a experienced programmer's process will help us to overcome this difficulty. They will be proficient in being able to quickly create the functions that the product needs, which will save a lot of time for the realization of our product. At the same time, compared to us, they will be quicker in detecting errors and easily fix them.</li>
-    <li>The project will need an additional person who can survey universities and educational systems in the country to invite them to use our system, that person will have a lot of knowledge about the system and be able to good communication skills to be able to convince schools to adopt our product and their system. Moreover, they are also our representatives to carry out transactions with partners, so this position needs someone who can be trusted and has high expertise.</li>
-    <li>A Data Analyst and Performance Measurement Specialist is someone who helps us track information related to the number of visits and the amount of knowledge downloaded, and is the person who analyzes data for the entire product to contribute ideas to the technical team. can develop the project thoroughly. They are also the ones who closely monitor the data on our behalf, this is a process that takes a lot of time and requires meticulousness from computer technicians.</li>
-</ol>
-    
-    <a href="index2.html">
-        <button style="background-color:white;color: black;border-radius:30px ;" ><b>GO to Rminder Page</b> </button>
-    </a>
+  <head>
+    <link rel="stylesheet" href="website.css">
+    <link rel="stylesheet" href="dropdowns2.css"> 
+    <link rel="stylesheet" href="filters.css">
+  
 
-</body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <meta charset="UTF-8">
+    <title>Enter Links</title>
+    <a href="presentation.html">Go to Report Page</a>
+  </head>
+
+<h2 id="title">Schedule:</h2>
+
+
+
+  <title>User Input Form</title>
+  <style>
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <body>
+
+    <div class="filteroverlay"></div>
+    <div class="starredoverlay"></div>
+   
+
+
+    <div id="overlay"></div>
+
+    <div id="trackOverlay"></div>
+    <div id="chooseFilterOverlay"></div>
+
+
+<button id="showStarredButton">
+  <i class="star-icon">&#9734;</i>
+  <span class="button-label">Starred</span>
+</button>
+
+
+
+
+
+<style>
+    #demoPlayer::-webkit-media-controls-play-button,
+    #demoPlayer::-webkit-media-controls-mute-button {
+        display: none;
+
+    }
+      #demoPlayer::-webkit-media-controls-overflow-button {
+        transform: translateY(-100%); /* Adjust this value as needed */
+    }
+</style>
+
+
+    
+
+
+
+
+    <div class="container">
+      </div>
+    </div>
+
+<style>
+  #timer,
+  #recStart,
+  #recStop {
+    color: white;
+  }
+</style>
+    </div>
+ 
+    <div id="recStart"></div>
+    <div id="recStop"></div>
+
+<h3 id="uploadHeading">Publish your beat:</h3>
+
+<div class="allfilters">
+  <h2 id="filterHeading">Filter:</h2>
+<h1 id="specificFilterHeading">Course & Date:</h1>
+
+
+<div class="intro-container">
+
+<div class="rhythmfilter-container">
+
+<select id="rhythmfilter">
+  <option value=""></option>
+  <option value="COSC 2083">COSC 2083</option>
+  <option value="COSC 2429">COSC 2429</option>
+  <option value="ISYS 3414">ISYS 3414</option>
+</select>
+</div>
+<div class="intensityfilter-container">
+
+<select id="intensityfilter">
+  <option value=""></option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
+  <option value="11">11</option>
+  <option value="12">12</option>
+  <option value="13">13</option>
+  <option value="14">14</option>
+  <option value="15">15</option>
+  <option value="16">16</option>
+  <option value="17">17</option>
+  <option value="18">18</option>
+  <option value="19">19</option>
+  <option value="20">20</option>
+  <option value="21">21</option>
+  <option value="22">22</option>
+  <option value="23">23</option>
+  <option value="24">24</option>
+  <option value="25">25</option>
+  <option value="26">26</option>
+  <option value="27">27</option>
+  <option value="28">28</option>
+  <option value="29">29</option>
+  <option value="30">30</option>
+  <option value="31">31</option>
+</select>
+</div>
+<div class="colorfilter-container">
+
+<select id="colorfilter">
+  <option value=""></option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
+  <option value="11">11</option>
+  <option value="12">12</option>  
+</select>
+</div>
+
+
+
+<div class="instrumentfilter-container">
+
+<select id="instrumentfilter">
+  <option value=""></option>
+  <option value="2023">2023</option>
+</select>
+</div>
+
+   </div>
+
+
+
+<div id="chordFiltersContainer">
+    <label for="chordFiltersContainer">Day:</label>
+</div>
+
+<div id="adjectivesContainer">
+  <script>
+
+
+const adjlabelElement = document.createElement("label");
+adjlabelElement.textContent = "Mode:";
+adjlabelElement.style.fontWeight = "bold";
+adjlabelElement.style.fontSize = "2em";
+adjlabelElement.style.backgroundColor = "transparent";
+
+adjectivesContainer.appendChild(adjlabelElement);
+
+</script>
+
+<div class="rhythmRhythmfilter-container">
+  <label for="rhythmRhythmfilter">Mode:</label>
+  <select id="rhythmRhythmfilter">
+    <option value=""></option>
+    <option value="lecture">lecture</option>
+    <option value="tutorial">tutorial</option>
+  </select>
+</div>
+
+
+<div class="soundSoundfilter-container">
+  <label for="soundSoundfilter">Time:</label>
+<select id="soundSoundfilter">
+  <option value=""></option>
+  <option value="01">01</option>
+  <option value="02">02</option>
+  <option value="03">03</option>
+  <option value="04">04</option>
+  <option value="05">05</option>
+  <option value="06">06</option>
+  <option value="07">07</option>
+  <option value="08">08</option>
+  <option value="09">09</option>
+  <option value="10">10</option>
+  <option value="11">11</option>
+  <option value="12">12</option>
+  <option value="13">13</option>
+  <option value="14">14</option>
+  <option value="15">15</option>
+  <option value="16">16</option>
+  <option value="17">17</option>
+  <option value="18">18</option>
+  <option value="19">19</option>
+  <option value="20">20</option>
+  <option value="21">21</option>
+  <option value="22">22</option>
+  <option value="23">23</option>
+  <option value="24">24</option>
+  
+</select>
+</div>
+
+<div class="colorColorfilter-container">
+  <label for="colorColorfilter">.</label>
+<select id="colorColorfilter">
+  <option value=""></option>
+  <option value=":00">:00</option>
+  <option value=":15">:15</option>
+  <option value=":30">:30</option>
+  <option value=":45">:45</option>
+</select>
+</div>
+</div>
+
+
+
+
+<h1 id="generalFilterHeading">Week:</h1>
+<div class="genrefilter-container">
+
+<select id="genreselect">
+  <option value="">All Weeks</option>
+  <option value="Week 1">Week 1</option>
+  <option value="Week 2">Week 2</option>
+  <option value="Week 3">Week 3</option>
+  <option value="Week 4">Week 4</option>
+  <option value="Week 5">Week 5</option>
+  <option value="Week 6">Week 6</option>
+  <option value="Week 7">Week 7</option>
+  <option value="Week 8">Week 8</option>
+  <option value="Week 9">Week 9</option>
+  <option value="Week 10">Week 10</option>
+  <option value="Week 11">Week 11</option>
+  <option value="Week 12">Week 12</option>
+</select>
+</div>
+
+
+
+
+
+<h1 id="keyFilterHeading">Key:</h1>
+<div class="keyfilter-container">
+
+<select id="keyselect">
+  <option value="">All Keys</option>
+  <option value="C">C</option>
+  <option value="Cm">Cm</option>
+  <option value="C#">C#</option>
+  <option value="C#m">C#m</option>
+  <option value="D">D</option>
+  <option value="Dm">Dm</option>
+  <option value="Eb">Eb</option>
+  <option value="Ebm">Ebm</option>
+  <option value="E">E</option>
+  <option value="Em">Em</option>
+  <option value="F">F</option>
+  <option value="F#">F#</option>
+  <option value="Fm">Fm</option>
+  <option value="F#m">F#m</option>
+  <option value="G">G</option>
+  <option value="G#">G#</option>
+  <option value="Gm">Gm</option>
+  <option value="G#m">G#m</option>
+  <option value="A">A</option>
+  <option value="Am">Am</option>
+  <option value="Bb">Bb</option>
+  <option value="Bbm">Bbm</option>
+  <option value="B">B</option>
+  <option value="Bm">Bm</option>
+</select>
+</div>
+</div>
+    <div class="upload-container">
+      <button id="uploadButton">(+) Add a notification</button>
+    </div>
+
+
+
+
+
+
+<div class="search-container">
+  <h2 id="seachHeading">Notification #: </h2>
+  <label for="search-container"></label>
+  <input type="text" id="trackSearchInput" placeholder="">
+  <button id="searchButton">Search</button>
+  <button id="cancelButton">Cancel</button>
+</div>
+
+
+    <script src="uploadbutton2.js"></script>
+
+    <script src="filter.js"></script>
+    <script src="chordfilter2.js"></script>
+    <script src="save.js"></script>
+    
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-storage.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-database.js"></script>
+
+
+
+
+  </body>
+  <script src="firebaseConfig.js"></script>
 </html>
+
+
