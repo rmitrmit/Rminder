@@ -17,7 +17,7 @@ const demoPlayer = document.getElementById("demoPlayer");
 
 const selectFileButton = document.createElement("button");
 selectFileButton.classList.add("file-upload-button");
-selectFileButton.textContent = "Select file from computer";
+selectFileButton.textContent = "Select image from computer";
 selectFileButton.style.position = "fixed";
 selectFileButton.style.top = "350px";
 selectFileButton.style.left = "50px";
@@ -30,10 +30,9 @@ uploadButton.addEventListener("click", function() {
   // Trigger the file upload dialog
   const fileInput = document.createElement("input");
   fileInput.type = "file";
-  fileInput.accept = "audio/*";
+  fileInput.accept = "image/*";
   fileInput.style.display = "none";
   filtersContainer.style.display = "none";
-  showFormButton.style.display = "none";
   searchContainer.style.display = "none";
   selectFileButton.style.display = "block";
   uploadHeading.style.display = "block";
@@ -237,7 +236,7 @@ for (let i = 1; i <= 5; i++) {
        
 
 setTimeout(function() {
-    showNotification("Your beat is live as " + trackName + ".");
+    showNotification(trackName + " successfully saved to Firebase.");
   }, 2500); // Delay in milliseconds
 
 
