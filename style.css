@@ -1,1 +1,169 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    position: sticky;
+    top: 0px;
+    align-items: self-end;
+    z-index: 999;
+}
+
+ul {
+    list-style: none;
+    background: black;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+ul li a {
+    display: block;
+    padding: 15px 25px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+}
+
+ul li ul.dropdown li {
+    display: block;
+    margin: 0;
+}
+
+ul li ul.dropdown {
+    background: rgb(0, 0, 0);
+    position: absolute;
+    z-index: 999;
+    display: none;
+    width: fit-content;
+}
+
+
+ul li a:hover {
+    background: rgb(30, 30, 30);
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+#about {
+    margin-top: 80px;
+    padding-left: 350px;
+    padding-right: 350px;
+}
+
+#about p {
+    margin-top: 20px;
+}
+
+#tools {
+    top: 50%;
+    margin-top: 100px;
+    padding-left: 350px;
+    padding-right: 350px;
+}
+
+#tools p {
+    margin-top: 20px;
+}
+
+#description {
+    top: 50%;
+    margin-top: 100px;
+    padding-left: 350px;
+    padding-right: 350px;
+}
+
+#description-overview p {
+    margin-top: 20px;
+}
+
+#description-aim p {
+    margin-top: 20px;
+}
+
+#description-progress p {
+    margin-top: 20px;
+}
+
+#description-roles p {
+    margin-top: 20px;
+}
+
+#description-scope p {
+    margin-top: 20px;
+}
+
+#description-technologies p {
+    margin-top: 20px;
+}
+
+#description-testing p {
+    margin-top: 20px;
+}
+
+#description-timeframe h3 {
+    margin-bottom: 20px;
+}
+
+#skills-and-jobs {
+    top: 50%;
+    margin-top: 100px;
+    padding-left: 350px;
+    padding-right: 350px;
+}
+
+#skills-and-jobs p {
+    margin-top: 20px;
+}
+
+#reflection {
+    top: 50%;
+    margin-top: 100px;
+    padding-left: 350px;
+    padding-right: 350px;
+    margin-bottom: 100px;
+}
+
+h3 {
+    margin-top: 37px;
+}
+
+#reflection p {
+    margin-top: 20px;
+}
+
+table {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#description-risks p, #description-communication p {
+    margin-top: 20px;
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(120px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
