@@ -167,3 +167,57 @@ h1, h2, h3 {
     transform: translateY(0px);
     opacity: 1;
 }
+
+@keyframes slide {
+    from {
+        transform: translateX(0)
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.tools {
+    margin-top: 40px;
+    overflow: hidden;
+    padding: 20px;
+    background: rgb(232, 232, 232);
+    white-space: nowrap;
+    position: relative;
+}
+
+.tool-slide {
+    display: inline-block;
+    animation: 35s slide infinite linear;
+}
+
+.tool-slide img {
+    height: 50px;
+    margin: 0 20px;
+}
+
+.tools:hover .tool-slide {
+    animation-play-state: paused;
+}
+
+.tools:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    content: "";
+    z-index: 3;
+}
+
+.tools:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    content: "";
+    z-index: 3;
+}
