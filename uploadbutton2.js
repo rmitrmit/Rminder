@@ -496,7 +496,7 @@ rhythmHeading.classList.add("rhythm-heading");
 
 
 const adjectivesHeading = document.createElement("h3");
-adjectivesHeading.textContent = "Intro:";
+adjectivesHeading.textContent = "Mode & Time:";
 adjectivesHeading.classList.add("adjectives-heading");
 
 
@@ -510,7 +510,7 @@ chordHeading.classList.add("chord-heading");
 
 
 const genreHeading = document.createElement("h3");
-genreHeading.textContent = "Genre:";
+genreHeading.textContent = "Week:";
 genreHeading.classList.add("genre-heading");
 
 const keyHeading = document.createElement("h3");
@@ -518,7 +518,7 @@ keyHeading.textContent = "Key:";
 keyHeading.classList.add("key-heading");
 
 const linkHeading = document.createElement("h3");
-linkHeading.textContent = "Purchase link(s):";
+linkHeading.textContent = "Link(s):";
 linkHeading.classList.add("link-heading");
 
 
