@@ -1,338 +1,110 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="website.css">
-    <link rel="stylesheet" href="dropdowns2.css"> 
-    <link rel="stylesheet" href="filters.css">
-  
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+<head>
     <meta charset="UTF-8">
-    <title>Enter Links</title>
-    <a href="presentation.html">Go to Report Page</a>
-  </head>
-
-<h2 id="title">Schedule:</h2>
-
-
-
-  <title>User Input Form</title>
-  <style>
-    .hidden {
-      display: none;
-    }
-  </style>
+    <title>Presentation Page</title>
 </head>
 <body>
-
-  <body>
-
-    <div class="filteroverlay"></div>
-    <div class="starredoverlay"></div>
-   
-
-
-    <div id="overlay"></div>
-
-    <div id="trackOverlay"></div>
-    <div id="chooseFilterOverlay"></div>
-
-
-<button id="showStarredButton">
-  <i class="star-icon">&#9734;</i>
-  <span class="button-label">Starred</span>
-</button>
-
-
-
-
-
-<style>
-    #demoPlayer::-webkit-media-controls-play-button,
-    #demoPlayer::-webkit-media-controls-mute-button {
-        display: none;
-
-    }
-      #demoPlayer::-webkit-media-controls-overflow-button {
-        transform: translateY(-100%); /* Adjust this value as needed */
-    }
-</style>
-
-
-    
-
-
-
-
-    <div class="container">
-      </div>
-    </div>
-
-<style>
-  #timer,
-  #recStart,
-  #recStop {
-    color: white;
-  }
-</style>
-    </div>
- 
-    <div id="recStart"></div>
-    <div id="recStop"></div>
-
-<h3 id="uploadHeading">Publish your beat:</h3>
-
-<div class="allfilters">
-  <h2 id="filterHeading">Filter:</h2>
-<h1 id="specificFilterHeading">Course & Date:</h1>
-
-
-<div class="intro-container">
-
-<div class="rhythmfilter-container">
-
-<select id="rhythmfilter">
-  <option value=""></option>
-  <option value="COSC 2083">COSC 2083</option>
-  <option value="COSC 2429">COSC 2429</option>
-  <option value="ISYS 3414">ISYS 3414</option>
-</select>
-</div>
-<div class="intensityfilter-container">
-
-<select id="intensityfilter">
-  <option value=""></option>
-  <option value="1">1</option>
-  <option value="2">2</option>
-  <option value="3">3</option>
-  <option value="4">4</option>
-  <option value="5">5</option>
-  <option value="6">6</option>
-  <option value="7">7</option>
-  <option value="8">8</option>
-  <option value="9">9</option>
-  <option value="10">10</option>
-  <option value="11">11</option>
-  <option value="12">12</option>
-  <option value="13">13</option>
-  <option value="14">14</option>
-  <option value="15">15</option>
-  <option value="16">16</option>
-  <option value="17">17</option>
-  <option value="18">18</option>
-  <option value="19">19</option>
-  <option value="20">20</option>
-  <option value="21">21</option>
-  <option value="22">22</option>
-  <option value="23">23</option>
-  <option value="24">24</option>
-  <option value="25">25</option>
-  <option value="26">26</option>
-  <option value="27">27</option>
-  <option value="28">28</option>
-  <option value="29">29</option>
-  <option value="30">30</option>
-  <option value="31">31</option>
-</select>
-</div>
-<div class="colorfilter-container">
-
-<select id="colorfilter">
-  <option value=""></option>
-  <option value="1">1</option>
-  <option value="2">2</option>
-  <option value="3">3</option>
-  <option value="4">4</option>
-  <option value="5">5</option>
-  <option value="6">6</option>
-  <option value="7">7</option>
-  <option value="8">8</option>
-  <option value="9">9</option>
-  <option value="10">10</option>
-  <option value="11">11</option>
-  <option value="12">12</option>  
-</select>
-</div>
-
-
-
-<div class="instrumentfilter-container">
-
-<select id="instrumentfilter">
-  <option value=""></option>
-  <option value="2023">2023</option>
-</select>
-</div>
-
-   </div>
-
-
-
-<div id="chordFiltersContainer">
-    <label for="chordFiltersContainer">Day:</label>
-</div>
-
-<div id="adjectivesContainer">
-  <script>
-
-
-const adjlabelElement = document.createElement("label");
-adjlabelElement.textContent = "Mode:";
-adjlabelElement.style.fontWeight = "bold";
-adjlabelElement.style.fontSize = "2em";
-adjlabelElement.style.backgroundColor = "transparent";
-
-adjectivesContainer.appendChild(adjlabelElement);
-
-</script>
-
-<div class="rhythmRhythmfilter-container">
-  <label for="rhythmRhythmfilter">Mode:</label>
-  <select id="rhythmRhythmfilter">
-    <option value=""></option>
-    <option value="lecture">lecture</option>
-    <option value="tutorial">tutorial</option>
-  </select>
-</div>
-
-
-<div class="soundSoundfilter-container">
-  <label for="soundSoundfilter">Time:</label>
-<select id="soundSoundfilter">
-  <option value=""></option>
-  <option value="01">01</option>
-  <option value="02">02</option>
-  <option value="03">03</option>
-  <option value="04">04</option>
-  <option value="05">05</option>
-  <option value="06">06</option>
-  <option value="07">07</option>
-  <option value="08">08</option>
-  <option value="09">09</option>
-  <option value="10">10</option>
-  <option value="11">11</option>
-  <option value="12">12</option>
-  <option value="13">13</option>
-  <option value="14">14</option>
-  <option value="15">15</option>
-  <option value="16">16</option>
-  <option value="17">17</option>
-  <option value="18">18</option>
-  <option value="19">19</option>
-  <option value="20">20</option>
-  <option value="21">21</option>
-  <option value="22">22</option>
-  <option value="23">23</option>
-  <option value="24">24</option>
-  
-</select>
-</div>
-
-<div class="colorColorfilter-container">
-  <label for="colorColorfilter">.</label>
-<select id="colorColorfilter">
-  <option value=""></option>
-  <option value=":00">:00</option>
-  <option value=":15">:15</option>
-  <option value=":30">:30</option>
-  <option value=":45">:45</option>
-</select>
-</div>
-</div>
-
-
-
-
-<h1 id="generalFilterHeading">Week:</h1>
-<div class="genrefilter-container">
-
-<select id="genreselect">
-  <option value="">All Weeks</option>
-  <option value="Week 1">Week 1</option>
-  <option value="Week 2">Week 2</option>
-  <option value="Week 3">Week 3</option>
-  <option value="Week 4">Week 4</option>
-  <option value="Week 5">Week 5</option>
-  <option value="Week 6">Week 6</option>
-  <option value="Week 7">Week 7</option>
-  <option value="Week 8">Week 8</option>
-  <option value="Week 9">Week 9</option>
-  <option value="Week 10">Week 10</option>
-  <option value="Week 11">Week 11</option>
-  <option value="Week 12">Week 12</option>
-</select>
-</div>
-
-
-
-
-
-<h1 id="keyFilterHeading">Key:</h1>
-<div class="keyfilter-container">
-
-<select id="keyselect">
-  <option value="">All Keys</option>
-  <option value="C">C</option>
-  <option value="Cm">Cm</option>
-  <option value="C#">C#</option>
-  <option value="C#m">C#m</option>
-  <option value="D">D</option>
-  <option value="Dm">Dm</option>
-  <option value="Eb">Eb</option>
-  <option value="Ebm">Ebm</option>
-  <option value="E">E</option>
-  <option value="Em">Em</option>
-  <option value="F">F</option>
-  <option value="F#">F#</option>
-  <option value="Fm">Fm</option>
-  <option value="F#m">F#m</option>
-  <option value="G">G</option>
-  <option value="G#">G#</option>
-  <option value="Gm">Gm</option>
-  <option value="G#m">G#m</option>
-  <option value="A">A</option>
-  <option value="Am">Am</option>
-  <option value="Bb">Bb</option>
-  <option value="Bbm">Bbm</option>
-  <option value="B">B</option>
-  <option value="Bm">Bm</option>
-</select>
-</div>
-</div>
-    <div class="upload-container">
-      <button id="uploadButton">(+) Add a notification</button>
-    </div>
-
-
-
-
-
-
-<div class="search-container">
-  <h2 id="seachHeading">Notification #: </h2>
-  <label for="search-container"></label>
-  <input type="text" id="trackSearchInput" placeholder="">
-  <button id="searchButton">Search</button>
-  <button id="cancelButton">Cancel</button>
-</div>
-
-
-    <script src="uploadbutton2.js"></script>
-
-    <script src="filter.js"></script>
-    <script src="chordfilter2.js"></script>
-    <script src="save.js"></script>
-    
-    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-storage.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-database.js"></script>
-
-
-
-
-  </body>
-  <script src="firebaseConfig.js"></script>
+    <h1 style ="font-size:30px;">Scope and Limits</h1>
+<p>Our project’s scope is to provide and support a method that can enhance productivity and reduce the time not only for students but also for lecturers and educational institutions. Below are the main functions that our product will conduct:</p>
+<ol>
+
+    <li>Integration and automation: As our primary purpose of this project, our production will combine and suggest ever single tools and apps that students and lecturers are required to have for different classes. As a result, it will create a common and friendly environment that will optimize the workflows and reduce the manual actions.</li>
+
+    <li>Tailored reminder: As there are different kinds of events and actions in education environments, our product will support lecturers, students and schools to custom and access to diverse communication gates and time management tools. Consequently, not only lecturers can remind and notify their students, but also students can manage their own groups’ timeframe and divide tasks in group projects.</li>
+
+    <li>Automation in organizing files and folders: Rminder acts as a repository for files needed for school and work, just like Google Drive and OneDrive. What makes the repository of Rminder superior compared to other cloud workspaces is the ability to automatically arrange these files and folders based on the preferences of the end-users using AI.</li>
+</ol>
+<p>Although there are many convenient features in this product, nothing is escape from limitation. It is important to be aware of several restrictions and factors that could have an impact on using experience of this product:</p>
+<ol>
+
+    <li>User Behavior: It requires time for users to use this software proficiently. As there are many customizable functions, the user needs to learn how to adjust and manage automation tasks. As a result, instruction such as video or training courses should be conducted before using the software.</li>
+
+    <li>Information Dependency: As we need a tremendous amount of information from users, accessing users' information such as Gmail, timetable, personal information etc. is an ultimate requirement. Consequently, we can easily receive notifications and work proficiently.</li>
+
+    <li>AI learning: To enhance AI features, it needs a certain amount of time to help the AI detect user behaviors so that we need as much user behavior as possible to develop AI features.</li>
+
+    <li>Privacy and Security: Due to the deep access to personal information and data, it increases the concern about privacy and security. Consequently, Ensuring about the protection of data is the most essential part that we focus on.</li>
+</ol>
+    <h2 style ="font-size:30px;">Tools and Technologies</h2>
+<ol>
+<li>Programming Languages:
+    <ul><li>
+    Python (Version 3.9+): Python is a popular high-level programming language for AI and automation, which is suitable for many of our app’s features. From version 3.9 and on, Python introduced performance improvements and new features like Type Hinting.
+    </li></ul>
+</li>
+<li>Backend Framework:
+    <ul><li>
+    Django (Version 3.2+): Django is known for its robustness and security. Version 3.2 introduced support for asynchronous views, enhancing scalability.
+    </li></ul>
+</li>
+<li>Frontend Framework:
+    <ul>
+        <li>Figma: Figma can be used to pre-design layouts, graphics, and icons for our application.</li>
+
+        <li>React.js (Version 18+): React.js is known for its component-based architecture and performance.</li>
+    </ul>
+</li>
+<li>Database:
+    <ul><li>PostgreSQL (Version 13+): PostgreSQL is a powerful open-source relational database with excellent support for complex queries and data integrity.</li></ul>
+</li>
+<li>AI and Machine Learning:
+    <ul>
+        <li>TensorFlow (Version 2.6+): TensorFlow is widely used for AI tasks. Version 2.6 includes performance optimizations and updated libraries.</li>
+
+        <li>PyTorch (Version 1.8+): PyTorch is known for its dynamic computation graph. Version 1.8 introduced new features and improvements.</li>
+    </ul>
+</li>
+<li>Cloud Services:
+    <ul><li>
+    AWS (Amazon Web Services): AWS provides a wide range of cloud services and has a strong reputation for scalability and reliability.
+    </li></ul>
+</li>
+<li>Version Control:
+    <ul><li>
+    Git and GitHub (Latest): Staying up-to-date with the latest Git version ensures access to the newest features and security updates.
+    </li></ul>
+</li>
+<li>APIs and Integrations:
+    <ul><li>
+    OAuth 2.0: OAuth 2.0 is a widely accepted protocol for secure authentication and authorization.
+    </li></ul>
+</li>
+<li>Data Storage:
+    <ul><li>
+    Amazon S3 (Latest): Amazon S3 is a reliable object storage service that is continually updated for performance and security enhancements.
+    </li></ul>
+</li>
+<li>Automation:
+    <ul><li>
+    Celery (Version 5+): Celery is a mature distributed task queue, and version 5 includes improvements in Python 3.8+ support and features like HTTP APIs.
+    </li></ul>
+</li>
+<li>Testing and Quality Assurance:
+    <ul>
+    <li>Selenium (Version 4+): Selenium is widely used for end-to-end testing, and version 4 includes improved features and better browser support.</li>
+
+    <li>Jest (Latest): Jest is a popular JavaScript testing framework that receives frequent updates and bug fixes.</li>
+    </ul>
+</li>
+<li>Deployment:
+    <ul>
+    <li>Docker (Latest): Docker is updated regularly with performance improvements and security enhancements.</li>
+
+    <li>Kubernetes (Latest): Kubernetes continues to evolve with each release, offering new features and bug fixes.</li>
+    </ul>
+</li>
+<li>Monitoring and Logging:
+    <ul>
+    <li>Prometheus (Latest): New exports and features are continually added to Prometheus, which is actively developed and maintained for monitoring.</li>
+
+    <li>ELK Stack (Latest): The ELK Stack is continually updated to enable new log formats, improve performance, and increase security.</li>
+    </ul>
+</li>
+</ol>
+    <h3 style ="font-size:30px;">Group Processes and Communications</h3>
+    <p>Based on the outcome and process of our team’s product, we believe that our team has a great and efficient plan and communication. Before every assignment, each of us will think and choose our own idea and plan to explain and protect that idea with other teammates. After that, we will only have one physical meeting in which we will debate and select the most suitable idea. Moreover, in that meeting, we also broke down the steps that we should take to complete the project so that we can create the timeframe and deadlines for each task and individuals. In order to enhance productivity, we used the Asana app to not only create timetables and divide tasks but also remind the deadline of every single team member. Furthermore, there is still some relevant information that 1 member needs to communicate with the other, so we decided to use messenger to contact each other. At the end of each task, regarding writing tasks, we submitted it to a drive that we created at the beginning of the assignment so that one person could gather it easily. On the other hand, for coding tasks, we choose GitHub to gather codes and share them with each other. Finally, at the end project, we will have an online meeting on Team in order to demonstrate the final product so that  we can evaluate and give feedback together.
+    </p>
+    <a href="index2.html">Go to Rminder Page</a>
+</body>
 </html>
-
-
