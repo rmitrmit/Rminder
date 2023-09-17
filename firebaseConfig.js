@@ -22,7 +22,7 @@ const storageRef = storage.ref();
 
 
 function uploadAudioFile(file) {
-  const audioRef = storageRef.child(`audio/${file.name}`);
+  const audioRef = storageRef.child(`image/${file.name}`);
   return audioRef.put(file);
 }
 
