@@ -434,6 +434,7 @@ uploadAudioFile(file)
     const linkValues2 = Array.from(linkInputs2).map((input) => input.value);
     const isStarred = false;
     const trackData = {
+      pic: audioUrl,
       genre: genreSelect.value,
       key: keySelect.value,
       rhythm: rhythmSelect.value,
