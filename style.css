@@ -256,3 +256,7 @@ h1, h2, h3 {
     padding: 15px;
     color:white;
 }
+
+ol li{
+    display: contents; 
+}
