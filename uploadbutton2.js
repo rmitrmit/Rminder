@@ -17,7 +17,7 @@ const demoPlayer = document.getElementById("demoPlayer");
 
 const selectFileButton = document.createElement("button");
 selectFileButton.classList.add("file-upload-button");
-selectFileButton.textContent = "Select file from computer";
+selectFileButton.textContent = "Select image from computer";
 selectFileButton.style.position = "fixed";
 selectFileButton.style.top = "350px";
 selectFileButton.style.left = "50px";
@@ -30,10 +30,9 @@ uploadButton.addEventListener("click", function() {
   // Trigger the file upload dialog
   const fileInput = document.createElement("input");
   fileInput.type = "file";
-  fileInput.accept = "audio/*";
+  fileInput.accept = "image/*";
   fileInput.style.display = "none";
   filtersContainer.style.display = "none";
-  showFormButton.style.display = "none";
   searchContainer.style.display = "none";
   selectFileButton.style.display = "block";
   uploadHeading.style.display = "block";
@@ -237,7 +236,7 @@ for (let i = 1; i <= 5; i++) {
        
 
 setTimeout(function() {
-    showNotification("Your beat is live as " + trackName + ".");
+    showNotification(trackName + " successfully saved to Firebase.");
   }, 2500); // Delay in milliseconds
 
 
@@ -497,7 +496,7 @@ rhythmHeading.classList.add("rhythm-heading");
 
 
 const adjectivesHeading = document.createElement("h3");
-adjectivesHeading.textContent = "Intro:";
+adjectivesHeading.textContent = "Mode & Time:";
 adjectivesHeading.classList.add("adjectives-heading");
 
 
@@ -511,7 +510,7 @@ chordHeading.classList.add("chord-heading");
 
 
 const genreHeading = document.createElement("h3");
-genreHeading.textContent = "Genre:";
+genreHeading.textContent = "Week:";
 genreHeading.classList.add("genre-heading");
 
 const keyHeading = document.createElement("h3");
@@ -519,7 +518,7 @@ keyHeading.textContent = "Key:";
 keyHeading.classList.add("key-heading");
 
 const linkHeading = document.createElement("h3");
-linkHeading.textContent = "Purchase link(s):";
+linkHeading.textContent = "Link(s):";
 linkHeading.classList.add("link-heading");
 
 
