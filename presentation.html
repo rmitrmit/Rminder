@@ -3,40 +3,40 @@
   <head>
     <meta charset="UTF-8">
     <title>Presentation Page</title>
-
     <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
     <nav>
       <ul>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#tools">Tools</a></li>
+        <li><a href="#display-about">About Us</a></li>
+        <li><a href="#display-tools">Tools</a></li>
         <li>
-          <a href="#description">Project</a>
+          <a href="#display-description">Project</a>
           <ul class="dropdown">
-            <li><a href="#description-overview">Overview</a></li>
-            <li><a href="#description-aim">Aims</a></li>
-            <li><a href="#description-progress">Progress</a></li>
-            <li><a href="#description-roles">Roles</a></li>
-            <li><a href="#description-scope">Scope</a></li>
-            <li><a href="#description-technologies">Technologies</a></li>
-            <li><a href="#description-testing">Testing</a></li>
-            <li><a href="#description-timeframe">Timeframe</a></li>
-            <li><a href="#description-risks">Risks</a></li>
-            <li><a href="#description-communication">Communication</a></li>
+            <li><a href="#display-description-overview">Overview</a></li>
+            <li><a href="#display-description-aim">Aims</a></li>
+            <li><a href="#display-description-progress">Progress</a></li>
+            <li><a href="#display-description-roles">Roles</a></li>
+            <li><a href="#display-description-scope">Scope</a></li>
+            <li><a href="#display-description-technologies">Technologies</a></li>
+            <li><a href="#display-description-testing">Testing</a></li>
+            <li><a href="#display-description-timeframe">Timeframe</a></li>
+            <li><a href="#display-description-risks">Risks</a></li>
+            <li><a href="#display-description-communication">Communication</a></li>
           </ul>
         </li>
-        <li><a href="#skills-and-jobs">Skills and Jobs</a></li>
-        <li><a href="#reflection">Reflection</a></li>
+        <li><a href="#display-skills-and-jobs">Skills and Jobs</a></li>
+        <li><a href="#display-reflection">Reflection</a></li>
       </ul>
     </nav>
 
-    <section id="about" class="reveal">
+    <br id="display-about">
+    <video src="open.mp4" autoplay style="width: 1000px; margin-left:350px; margin-top: 10px" muted loop></video>
+    <section id="about">
       <h2>Team Profile</h2>
     
       <p>We - Lê Đức Trung, Trương Gia Lợi, Hồ Lê Anh Minh, and Đỗ Văn Tùng - are “100”. 100 stands for the number 4 in bits, and can be seen as the symbol of apex, total commitment, and wholeness. Our team “100” consists of unique individuals, each with his own strengths and a shared élan of perfecting what we deem as invaluable to the community. And what that is, presented here, is Rminder - a highly integrated productivity software that replaces traditional workstation and other productive tools on the market.</p>
-
       
       <div class="portraits">  
         <div class="box">
@@ -74,15 +74,15 @@
         </div>
       </div>
       
-
     </section>
     
+    <br id="display-tools">
+
     <section id="tools" class="reveal">
       <h2>Tools</h2>
 
-
       <p>To develop and manage the page collaboratively, we have created the following
-        <a href=" GitHub repository" target="_blank" style="text-decoration: none; color: rgb(39, 39, 39)">
+        <a href=" GitHub repository" target="_blank" style="color: rgb(39, 39, 39)" id="github">
           GitHub repository.
         </a>
       </p>
@@ -90,10 +90,11 @@
       <p>Looking back at our web building stages, we have a few points to comment on. Firstly, since we are new to using Git and GitHub and due to the simple nature of our web page, our audit trail does not contain too many adjustments, let alone complex merging of different branches. Secondly, to extend our knowledge and skills on HTML (as well as CSS and JavaScript), we learn from and our code on prototype pages from a low-code development environment called “Webflow”, where the elements are abundant and properly organized. This aids in helping us understand the best practices of web development. Thirdly, we played by our strengths when building the page. For example, Tùng, more familiar with GitHub than us from the outset, has initiated the repository where he had done some prototyping for our intended product, while Trung made much contributions on the layout and overall look of our page.</p>
     </section>
 
+    <br id="display-description">
+
     <section id="description">
       <h2 class="reveal">Project Description</h2>
-
-
+      <br id="display-description-overview">
       <section id="description-overview" class="reveal">
         <h3>Overview</h3>
 
@@ -103,9 +104,15 @@
 
       <p>What will this help look like, packed as it is into one single product? Though the functionality of a deliverable may scale infinitely, the mainframe should include: (1) integration and automation of multiple platforms used by students and their institutions, (2) tailored reminders for all types of activity, and (3) automated intuitive organization of academic and digital resources.</p>
 
+      <video src="f1.mp4" style="width: 500px; height: 500px; margin-left: 280px" autoplay loop>first function</video>
+
       <p>For our first function, we automate for our users tasks that they have to do frequently, like sending a weekly reminder to their team on important deadlines. We get rid of tedious intermediary steps of opening, closing software, and remembering information in-between actions to accomplish the tasks: no more opening a calendar app to manually add a section, remember another, and firing the email app, looking for receivers, and drafting content, etc. Chains of triggers that link different applications together can save the users time previously spent on much mindless toying and energy previously invested in non-crucial work.</p>
 
+      <video src="f2.mp4" autoplay style="width: 500px; height: 500px; margin-left: 280px" autoplay loop>second function</video>
+
       <p>The second function allows our users to receive emails, notifications, or even phone calls that inform them on the next step of their day. Although this may require some little setting up, our application can learn the patterns of receptions and repeat them in the future or ask for its self-adjustment from time to time. This function, based on the logics of Machine Learning (ML) and Artificial Intelligence (AI), has the same root as the third.</p>
+
+      <video src="f3.mp4" autoplay style="width: 500px; height: 500px; margin-left: 280px" autoplay loop>third function</video>
 
       <p>Our third function allows our users to step away from the task of organizing files and folders, which can be time-consuming, ineffective, and downright tedious. Based on the acquired insights from our users, we can create a workspace architecture that is clean and intuitive for them to easily access at any time.</p>
 
@@ -113,12 +120,12 @@
 
       <p>If we were to work on this project, we would be launchers of one amongst a sea of productivity applications used by all types of users, but still one shining gem in technologies utilized by academics specifically. Following the surge of Machine Learning and Artificial Intelligence recently, we want to incorporate the functions mentioned above into our product as the unique selling point. In the eyes of recruiters, we would be problems scourgers and action-takers, which are roles required to aid the functioning of any systems in any specializations. Different as we are regarding our backgrounds and goals, and nonetheless collaborating seamlessly, we will not only come up as the dream team collectively, but also decent group players individually, who get the balance of 'forcibly influencing' and 'being swayed' optimal. In short, we have practiced to be good meta-players in a meta-team.</p>
       </section>
-
+      <br id="display-description-aim">
       <section id="description-aim" class="reveal">
         <h3>Aims</h3>
         <p>Our aim is to develop software to help students learn at their own convenience and in their own way. Mr. Long once said that the advent of the internet made information more widely available, while the coming advent of AI - which we are currently seeing - will filter and personalize the vast sea of information that’s available on the internet and around us to further help us gain relevant knowledge and increase productivity. We could utilize current AI technologies to analyze and deeply understand each student’s learning ability, as well as their aspirations and goals, and guide them through their academic journey with the endless library of data from the Internet, and intelligence of an AI system.</p>
       </section>
-      
+      <br id="display-description-progress">
       <section id="description-progress" class="reveal">
         <h3>Plans and Progress</h3>
         <p>We have designed a prototype that incorporated these following elements:</p>
@@ -126,9 +133,9 @@
         <p>2. Front-End Development: Our front-end interface, constructed using HTML and JavaScript, plays a pivotal role in streamlining the user experience. It presents notifications in an organized manner, resembling discrete "blocks." Each block encapsulates the essential details of a lecture.</p>
         <p>3. Simplified Email Automation: Within the interface, we introduced a user-friendly feature—a button. When clicked, this button initiates the creation of precomposed emails. These emails are meticulously structured with the correct information and recipients, significantly reducing the user's manual effort. All that remains is to send these emails, ensuring timely communication and access to essential lecture materials.</p>
         <p>Through the integration of database management, front-end design, and email automation, we are poised to streamline the educational experience and reduce the friction associated with online learning. This marks a significant stride toward our broader vision of utilizing AI to personalize and optimize the learning journey for all Students.</p>
-        <p>For future developments, we will adopt Scrum methodology [1]. The methodology requires the following roles: product owner – who sets the vision for what the final product looks like and how to achieve that vision; scrum master – who thoroughly trains other members on Scrum agile workflow and ensures that Scrum agile principles are met throughout all stages; and developers – who contribute directly to the concretization of the product, to collaborate in a transparent and flexible manner in sprints (processes of achieving some defined goals). The methodology also calls for backbone objects such as the product backlog (specifications of use cases and scopes) and the sprint backlog (plans for development stages) upon which the collaborative efforts are based. </p>
+        <p>For future developments, we will adopt <a href="https://www.scrum.org/" style="color:black">Scrum methodology</a>. The methodology requires the following roles: product owner – who sets the vision for what the final product looks like and how to achieve that vision; scrum master – who thoroughly trains other members on Scrum agile workflow and ensures that Scrum agile principles are met throughout all stages; and developers – who contribute directly to the concretization of the product, to collaborate in a transparent and flexible manner in sprints (processes of achieving some defined goals). The methodology also calls for backbone objects such as the product backlog (specifications of use cases and scopes) and the sprint backlog (plans for development stages) upon which the collaborative efforts are based. </p>
       </section>
-
+      <br id="display-description-roles">
       <section id="description-roles" class="reveal">
         <h3>Roles</h3>
         <p>Lê Đức Trung takes on the position of managing both the project and application development, is the person who will assign tasks to all remaining members, and will remind the reporting time so that everyone can keep it on the right track that is scheduled when the initial decision is made. Moreover, He is also the one who will collect all the team reports and edit them to add to the final summary report.</p>
@@ -136,7 +143,7 @@
         <p>Hồ Lê Anh Minh as the main application developer of the team, will take care of most of the technical tasks of the team. Having prior knowledge of the IT industry is his advantage, he can easily handle technical difficulties. Moreover, his relationship with industry professionals has also helped us a lot in developing the project and gathering opinions from the experts.</p>
         <p>Đỗ Văn Tùng is the owner of the project and this is also the person who came up with this product idea for our whole team, so he is the one who will be in charge of setting up the main functions for our product and will be the one to collect members' personal opinions about this product so that we can continue to improve the product.</p>
       </section>
-      
+      <br id="display-description-scope">
       <section id="description-scope" class="reveal">
         <h3>Scope and Limits</h3>
         <p>Our project’s scope is to provide and support a method that can enhance productivity and reduce the time not only for students but also for lecturers and educational institutions. Below are the main functions that our product will conduct:</p>
@@ -149,7 +156,7 @@
         <p>3. AI learning: To enhance AI features, it needs a certain amount of time to help the AI detect user behaviors so that we need as much user behavior as possible to develop AI features.</p>
         <p>4. Privacy and Security: Due to the deep access to personal information and data, it increases the concern about privacy and security. Consequently, Ensuring about the protection of data is the most essential part that we focus on.</p>
       </section>
-
+      <br id="display-description-technologies">
       <section id="description-technologies" class="reveal">
         <h3>Tools and Technology</h3>
         <p>1. Programming Languages</p>
@@ -228,7 +235,7 @@
           </div> 
         </div>
       </section>
-      
+      <br id="display-description-testing">
       <section id="description-testing" class="reveal">
         <h3>Testing</h3>
         <p>We've been putting our product to the test in three classes where we had access to the email lists. Our experience has been mixed so far. Some students have given positive feedback, appreciating the email reminders. However, we haven't received extensive feedback from the majority of students.</p>
@@ -260,7 +267,7 @@
         <p>2. Bug Reports: Resolve 95% of user-reported issues and bugs within 48 hours.</p>
         <p>3. Documentation and Support: Documentation Quality: Achieve a documentation completeness score of 90% or higher. Customer Support: Resolve 90% of user queries or issues within 24 hours.</p>
       </section>
-
+      <br id="display-description-timeframe">
       <section id="description-timeframe" class="reveal">
         <h3>Timeframe</h3>
         <p>Our project spans 17 weeks, starting from August 28th 2023. During the first four weeks, the project’s ideation and the human and technological resources are pooled together. We spend the fifth week overlooking the next development steps. There are three main sprints, dedicated to the three main functionalities of our product, with the first sprint running from the sixth to ninth week, the second the tenth to thirteenth week, and the third from then to the sixteenth week. Our deployment is in the seventeenth week. The plan can be visualized with the help of the following table.</p>
@@ -884,20 +891,19 @@
           </table>
 
           <p>However, due to the agile nature of the Scrum methodology, our team may have to make many amendments on the fly, both operationally and in terms of the final vision. Therefore, this plan should serve as a rough guide which serves a certain amount of predictability that is necessary for the smooth functioning of the whole team, at least at the present stage.</p>
-
       </section>
-
+      <br id="display-description-risks">
       <section id="description-risks" class="reveal">
         <h3>Risks</h3>
         <p>Even though our final product performs well in terms of features, we still cannot avoid facing difficulties at the beginning when we first apply the product to the system. First and foremost, the trust of users will be something that we have to face, our product is so new that it will not be easy to gain the trust of users in the early days. At the same time to be able to apply our product and an educational system, we need a lot of cooperation from the teacher to the students. Since this is a new system, we need to guide the teachers and students about the operations and functions of the application. This application is considered to completely change the learning and teaching habits of the school. Before applying the product, teachers only need to upload learning files to the class's social network group and students need to access many data sources to be able to search for knowledge. Furthermore, our product will cause teachers to do more work than the old way of teaching, they will have to upload at the right time and on the right topic of that knowledge, but this gives an advantage to the teachers. However, students only need to have the right access to our website to get the necessary knowledge, no need to wander around like before.</p>
       </section>
-
+      <br id="display-description-communication">
       <section id="description-communication" class="reveal">
         <h3>Group Processes and Communication</h3>
         <p>Based on the outcome and process of our team’s product, we believe that our team has a great and efficient plan and communication. Before every assignment, each of us will think and choose our own idea and plan to explain and protect that idea with other teammates. After that, we will only have one physical meeting in which we will debate and select the most suitable idea. Moreover, in that meeting, we also brook down the steps that we should take to complete the project so that we can create the timeframe and deadlines for each task and individuals. In order to enhance productivity, we used the Asana app to not only create timetables and divide tasks but also remind the deadline of every single team member. Furthermore, there is still some relevant information that 1 member needs to communicate with the other, so we decided to use messenger to contact each other. At the end of each task, regarding writing tasks, we submitted it to a drive that we created at the beginning of the assignment so that one person could gather it easily. On the other hand, for coding tasks, we choose GitHub to gather codes and share them with each other. Finally, at the end project, we will have an online meeting on Team in order to demonstrate the final product so that  we can evaluate and give feedback together.</p>
       </section>
     </section>
-
+    <br id="display-skills-and-jobs">
     <section id="skills-and-jobs" class="reveal">
       <h2>Skills and Jobs</h2>
       <p>As the project scales, it will be desirable for us to recruit more members with different roles to deliver the best output.</p>
@@ -906,7 +912,7 @@
       <p>The project will need an additional person who can survey universities and educational systems in the country to invite them to use our system. That person will have a lot of knowledge about the system and be able to have good communication skills to be able to convince schools to adopt our product and their system. Moreover, they are also our representatives to carry out transactions with partners, so this position needs someone who can be trusted and has high expertise.</p>
       <p>A data analyst and performance measurement specialist will help us track the number of visits and downloads, and analyze data for the entire product to contribute ideas to the technical team. can develop the project thoroughly. They are also the ones who closely monitor the data on our behalf, this is a process that takes a lot of time and requires meticulousness from computer technicians.</p>
     </section>
-    
+    <br id="display-reflection">
     <section id="reflection" class="reveal">
       <h2>Group Reflection</h2>
       <h3>Overview</h3>
@@ -917,18 +923,13 @@
       <p>The improvement that we could have implemented is dealing with time. In retrospect, many of our tasks, especially writing, could have been easily finished in a much shorter amount of time if we were to carve out a day for it. This could have saved us much more time to further perfect our deliverable and for cool projects outside of school, which would be tremendously valuable in the long run. We could have also focused more on the technical aspects of the project, as that might spark more creativity and strengthen our collaboration. For example, Trung could have spent more time learning UI/UX design and Lợi could have practiced more JavaScript to actually have more to add more functionalities to our assignment or to broaden the team’s project bucket list.</p>
       <p>Still, overall, our team did a good job. Each member showed to others exemplary methods of getting our tasks done, and had learned a great deal in terms of practices and the work ethos. Such a great start promises a fruitful future collaboration and meaningful contribution to the tech industry.</p>
 
-
-          <button id="individualReflectionBtn" class="dropdown-button">Individual Reflections</button>
-          <div id="individualReflectionContent" class="dropdown-content">
       <h3>Individual Reflections</h3>
-
       <p>Trung: I have discovered how personalities of our group shape and foster our workflow, which is surprising. For example, Tùng, more of a dreamer, would not be concerned about all the details of our assignment but more of what role it may play in the long run for all members, while I, more dutiful, pick up the position of an organizer very naturally and assign tasks for everyone. For me, this observation may aid me in planning my career, as such an observed temperament will serve me well in managerial positions. I have also learned how the group functions smoothly when all members are on board and understand thoroughly the common goals, which must be concrete and measurable. When everyone knows what part they play and the criteria for being a successful player, fear of uncertainty and related stress are gone, enabling us to perform at our best. Moreover, I find it extremely helpful to not micromanage a group where all members are somewhat creative, because scrutiny can hamper the limitless productivity of their creative spirits and hamper my own learning – which must be outsourced to what my team members bring to the table. Finally, I have also practiced negotiating the end-goal of a collective work, which is to find the balance between different worldviews, priorities, and the circumstantial constraints.</p>
       <p>Lợi: All process of our assignment is on track, everything was good, from divided sessions for each member to our relationship, all things worked together very well. First and foremost, I had more friendly and trusting relationships, everyone was outgoing although I was the youngest person, and they were so open to answering my questions when I struggled with this information about our assignment. On the other hand, I widened my knowledge about the IT industry through this assignment, it also brought me a new perspective about how the world runs. For instance, when we create an application or run a business, we must be concerned about the risks that can come to our project, and what difficulties can affect our process. In the beginning of this assignment, I thought it would take a lot of time to finish the project, but when we sat together and divided the session for everyone, everything was finished a lot faster than I expected. Finally, I knew how to use many effective tools that can help me optimize the potential of our application, to cite a prime example, Chat GPT, is a tool that helped me a lot to research information and also put many ideas into my head to do this assignment.</p>
       <p>Minh: After this class, especially my group, I have learned a lot about organizing a group and scheduling the timetable for the deadlines and group timetable which is the most important knowledge and skill in both working and studying environment. Thanks to Trung, he showed me how to use Asana which is an app that helps all teammates catch up the schedule of the assignment and remind us of upcoming deadlines. Besides, the most surprising part of this project is the great performance in making websites and using Git of Tung. During the time of building the website, Tung taught me a lot in using HTML and JavaScript which will be the most necessary language for my future career. Moreover, I also recognize that giving a chance to every teammate to contribute their own ideas and opinions is an essential part to make the project as creative as possible. As a result, if the first idea has problems as it is too hard to accomplish, we instantly will have another idea as a backup plan. Finally, there are still features that I still want to develop more for our product. However, due to the limit of time, we have to stop at a few features but thanks to this project, I have gained a lot of new knowledge and skill so that I can make a better product in the future.</p>
       <p>Tùng: I want to thank Trung for relentlessly pushing the group to achieve goals by a deadline and being the sole director of the group. Thanks to him, we were all on top of our tasks. A lot of things went well because we were organized. It allowed us to allocate time to quickly build and test a product, which made it easier to evaluate and see the weaknesses in our idea - we saw a few. Being well-organized also helped us communicate more effectively, since we were always clear on each member’s responsibility. I also recognized areas where we have improved. We could have spent more time doubling down on our product development and have a more advanced prototype. We could have also devised a collective effort to focus on approaching faculties and asking for permission to let us operate our product in many more classes. I was particularly surprised by the smooth sailing we enjoyed when we maintained our organization compared to past experiences in group work, where fragmented efforts often hindered commitment. I’ve noticed that it’s hard to get everyone committed when we don't establish a connection from the start. Working with the group also taught me the importance of first impressions. The initial impression sets the foundation for a member's sense of responsibility within a group, and over time, this sense builds upon itself. It's a powerful motivator to maintain that positive impression, because most of us would hate to betray a good first impression. Finally, I was fortunate on the day we formed teams, because I decided to open myself up, and was able to connect with the right people.</p>
     </section>
     
-
   </body>
 
   <script>
