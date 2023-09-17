@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
       audioIntroElement.style.fontFamily = "sans-serif";
 
       // Set the innerHTML of the audio intro element
-
+const pic = track.pic;
 const genre = track.genre;
 const keykey = track.key;
  const rhythm = track.rhythm;
@@ -381,9 +381,9 @@ const trackNameElement = document.createElement("p");
 
           let emailBodyFull = '';
            if (dynamic === 'lecture') {
-            emailBodyFull = `${emailBody}\n\n${emailBody2}\n\n${emailBody3}\n\n${emailBody4}\n\n${emailBody5}`;
+            emailBodyFull = `${emailBody}\n\n${emailBody2}\n\n${emailBody3}\n\n${emailBody4}\n\n${pic}\n\n${emailBody5}`;
             } else {
-              emailBodyFull = `${emailBody}\n\n${emailBody2}\n\n${emailBody4}\n\n${emailBody5}`;
+              emailBodyFull = `${emailBody}\n\n${emailBody2}\n\n${emailBody4}\n\n${pic}\n\n${emailBody5}`;
             }
            
        
